@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "XtSz2FuX3g+3nzXL+ing1XPk1iuu4KFV9wV4tpXM0/q3tfM+o0c1J/yiy5ACiLST4zXnE+fRXrwg9DN9dccCXA==",
+  "success": true,
+  "projectFilePath": "D:\\Examples\\Dell Test\\GetDetails\\SystemInfoAPI\\SystemInfoCommon\\SystemInfoCommon.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AL2851\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\AL2851\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\AL2851\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\AL2851\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\AL2851\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\AL2851\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\AL2851\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

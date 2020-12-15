@@ -1,0 +1,12 @@
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\bin\Debug\netcoreapp3.1\SystemInfoService.deps.json
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\bin\Debug\netcoreapp3.1\SystemInfoService.dll
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\bin\Debug\netcoreapp3.1\SystemInfoService.pdb
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\bin\Debug\netcoreapp3.1\SystemInfoCommon.dll
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\bin\Debug\netcoreapp3.1\SystemInfoCommon.pdb
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\obj\Debug\netcoreapp3.1\SystemInfoService.csprojAssemblyReference.cache
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\obj\Debug\netcoreapp3.1\SystemInfoService.AssemblyInfoInputs.cache
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\obj\Debug\netcoreapp3.1\SystemInfoService.AssemblyInfo.cs
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\obj\Debug\netcoreapp3.1\SystemInfoService.csproj.CopyComplete
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\obj\Debug\netcoreapp3.1\SystemInfoService.dll
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\obj\Debug\netcoreapp3.1\SystemInfoService.pdb
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoService\obj\Debug\netcoreapp3.1\SystemInfoService.csproj.CoreCompileInputs.cache

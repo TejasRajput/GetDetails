@@ -1,0 +1,12 @@
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\bin\Debug\netcoreapp3.1\SystemInfoRepo.deps.json
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\bin\Debug\netcoreapp3.1\SystemInfoRepo.dll
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\bin\Debug\netcoreapp3.1\SystemInfoRepo.pdb
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\bin\Debug\netcoreapp3.1\SystemInfoCommon.dll
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\bin\Debug\netcoreapp3.1\SystemInfoCommon.pdb
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\obj\Debug\netcoreapp3.1\SystemInfoRepo.AssemblyInfoInputs.cache
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\obj\Debug\netcoreapp3.1\SystemInfoRepo.AssemblyInfo.cs
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\obj\Debug\netcoreapp3.1\SystemInfoRepo.csproj.CopyComplete
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\obj\Debug\netcoreapp3.1\SystemInfoRepo.dll
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\obj\Debug\netcoreapp3.1\SystemInfoRepo.pdb
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\obj\Debug\netcoreapp3.1\SystemInfoRepo.csprojAssemblyReference.cache
+D:\Examples\Dell Test\GetDetails\SystemInfoAPI\SystemInfoRepo\obj\Debug\netcoreapp3.1\SystemInfoRepo.csproj.CoreCompileInputs.cache
