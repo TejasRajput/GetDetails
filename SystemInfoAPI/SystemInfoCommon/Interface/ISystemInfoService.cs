@@ -8,7 +8,7 @@ namespace SystemInfoCommon.Interface
 {
    public interface ISystemInfoService
     {
-        Task<string> SystemProcess(string selectedItem);
+        Task<IEnumerable<ItemDetails>> SystemProcess(int itemId);
 
         Task<IEnumerable<Items>> GetItemAsync();
 

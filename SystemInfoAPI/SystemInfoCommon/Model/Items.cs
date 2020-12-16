@@ -10,7 +10,6 @@ namespace SystemInfoCommon.Model
 
         public string  Name { get; set; }
 
-        public double Price { get; set; }
 
         public string ModelNumber { get; set; }
 

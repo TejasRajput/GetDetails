@@ -19,16 +19,16 @@ namespace SystemInfoAPI.Controllers
             _systemInfoService = systemInfoService;
         }
 
-        [HttpPost]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<SystemType>))]
+        [HttpGet("{itemId}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<ItemDetails>))]
         [ProducesResponseType(404)]
         [ProducesResponseType(406)]
-        public async Task<IActionResult> ProcessSystemInfo(SystemType systemType)
+        public async Task<IActionResult> ProcessSystemInfo(int itemId)
         {
             try
             {
-                var response = await _systemInfoService.SystemProcess(systemType.SelectedItem);
-
+                var response = await _systemInfoService.SystemProcess(itemId);
+                if (response == null) return NotFound();
                 return Ok(response);
             }
             catch (Exception ex)

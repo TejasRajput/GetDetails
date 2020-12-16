@@ -1,0 +1,30 @@
+<div>
+
+  Select Items :
+  <select name="city" class="rounded-inputs20 select-select col-md-3" (change)="getDetails($event.target.value)">
+    <option [value]="null">Select item</option>
+    <option *ngFor="let item of items" [value]="item.id">{{item.name}}</option>
+  </select>
+
+  <div>
+    <br/>
+    <h4>Product Details:</h4>
+    <table class="table table-striped table-responsive-md">
+      <tr>
+        <th>Brand</th>
+        <th>Details</th>
+        <th>Configuration</th>
+        <th>Memory</th>
+        <th>Price</th>
+      </tr>
+      <tr *ngFor="let itemDetail of itemDetails">
+        <td>{{itemDetail.brand}}</td>
+        <td>{{itemDetail.details}}</td>
+        <td>{{itemDetail.configuration}}</td>
+        <td>{{itemDetail.memory}}</td>
+        <td>{{itemDetail.price}}</td>
+      </tr>
+
+    </table>
+  </div>
+</div>

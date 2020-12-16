@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
 import { HomeServices } from "../services/home.service";
 import { Items } from "../models/Items";
+import { ItemDetails } from '../models/ItemDetails';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
+  templateUrl: './home.component.html'
 })
 export class HomeComponent {
 
   public items: Items[];
+
+  public itemDetails: ItemDetails[];
+
 
   constructor(public readonly homeServices: HomeServices) { }
 
@@ -19,8 +23,17 @@ export class HomeComponent {
   public getItems() {
     this.homeServices.getItems().subscribe(results => {
       this.items = results;
-      console.log(results);
     }, error => {
+      alert('Server side error occured.');
+    });
+  }
+
+  public getDetails(id:number) {
+    this.homeServices.getItemDetails(id).subscribe(results => {
+      this.itemDetails = results;
+      return this.itemDetails; 
+    }, error => {
+     alert('Server side error occured.');
     });
   }
 }

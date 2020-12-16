@@ -13,9 +13,9 @@ namespace SystemInfoService
         {
             _getSystemInfo = getSystemInfo;
         }
-        public async Task<string> SystemProcess(string selectedItem)
+        public async Task<IEnumerable<ItemDetails>> SystemProcess(int itemId)
         {
-            return await _getSystemInfo.GetSystemInfo(selectedItem);
+            return await _getSystemInfo.GetSystemInfo(itemId);
         }
 
         public async Task<IEnumerable<Items>> GetItemAsync()

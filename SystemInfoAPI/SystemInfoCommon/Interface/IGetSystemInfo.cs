@@ -6,7 +6,7 @@ namespace SystemInfoCommon.Interface
 {
     public interface IGetSystemInfo
     {
-        Task<string> GetSystemInfo(string selection);
+        Task<IEnumerable<ItemDetails>> GetSystemInfo(int itemId);
 
         Task<IEnumerable<Items>> GetItemAsync();
     }
