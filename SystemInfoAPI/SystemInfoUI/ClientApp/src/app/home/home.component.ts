@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HomeServices } from "../services/home.service";
 import { Items } from "../models/Items";
 import { ItemDetails } from '../models/ItemDetails';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,7 @@ export class HomeComponent {
   public itemDetails: ItemDetails[];
 
 
-  constructor(public readonly homeServices: HomeServices) { }
+  constructor(public readonly homeServices: HomeServices, private router: Router) { }
 
   public ngOnInit() {
     this.getItems();
@@ -35,5 +36,10 @@ export class HomeComponent {
     }, error => {
      alert('Server side error occured.');
     });
+  }
+
+  onLogout() {
+    localStorage.removeItem('token');
+    this.router.navigateByUrl('login');
   }
 }

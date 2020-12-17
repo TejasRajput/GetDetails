@@ -4,6 +4,6 @@ namespace SystemInfoCommon.Interface
 {
     public interface ISystemResult
     {
-         Task<string> Result();
+        Task<string> Result();
     }
 }

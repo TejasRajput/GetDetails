@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SystemInfoCommon.Model
+﻿namespace SystemInfoCommon.Model
 {
     public class ItemDetails
     {
@@ -19,6 +15,5 @@ namespace SystemInfoCommon.Model
 
         public string Memory { get; set; }
         public double Price { get; set; }
-
     }
 }

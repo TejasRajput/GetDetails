@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SystemInfoCommon.Model
+﻿namespace SystemInfoCommon.Model
 {
-  public class Items
+    public class Items
     {
         public int Id { get; set; }
 
-        public string  Name { get; set; }
+        public string Name { get; set; }
 
 
         public string ModelNumber { get; set; }
-
-
-
     }
 }

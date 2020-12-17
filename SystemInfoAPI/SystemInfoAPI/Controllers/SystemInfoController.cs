@@ -4,12 +4,15 @@ using System.Net;
 using System.Threading.Tasks;
 using SystemInfoCommon.Interface;
 using SystemInfoCommon.Model;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace SystemInfoAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class SystemInfoController : ControllerBase
     {
         private readonly ISystemInfoService _systemInfoService;

@@ -1,4 +1,6 @@
+using System.Text;
 using SystemInfoCommon.Interface;
+using SystemInfoCommon.Model;
 using SystemInfoService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -7,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SystemInfoRepo;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 namespace SystemInfoAPI
 {
@@ -25,9 +29,35 @@ namespace SystemInfoAPI
             services.AddCors();
             services.AddControllers();
 
+            var appSettingSection = Configuration.GetSection("AppSettings");
+            services.Configure<AppSettings>(appSettingSection);
+
+            //JWT Authentcation
+
+            var appSettings = appSettingSection.Get<AppSettings>();
+            var Key = Encoding.UTF32.GetBytes(appSettings.Key);
+
+            services.AddAuthentication(au =>
+            {
+                au.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                au.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(jwt =>
+            {
+                jwt.RequireHttpsMetadata = false;
+                jwt.SaveToken = true;
+                jwt.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+
             //DI
             services.AddScoped<IGetSystemInfo, GetSystemInfoRepo>();
             services.AddScoped<ISystemInfoService, GetSystemInfoService>();
+            services.AddScoped<IAuthenticateService, AuthenticateService>();
 
             //swagger
             services.AddSwaggerGen(options =>
