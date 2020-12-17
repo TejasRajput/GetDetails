@@ -14,13 +14,13 @@ namespace SystemInfoAPI.Controllers
         {
             _authenticateService = authenticateService;
         }
+        
 
         [HttpPost]
         public IActionResult Post([FromBody] Login model)
         {
             var user = _authenticateService.Authenticate(model.UserName, model.Password);
             if (user == null) return BadRequest(new {message = " user name or password is incorrect"});
-
             return Ok(user);
         }
     }
