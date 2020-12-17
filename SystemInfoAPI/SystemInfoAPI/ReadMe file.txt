@@ -1,7 +1,6 @@
 ﻿Credentials for login:- 
 
-Username = "TEJAS2604"
-
+Username = "TejasRajput"
 Password = "TEJAS2604"
 
 
@@ -13,7 +12,7 @@ to access "SystemInfoController" controller.
 
 
 for UI user will land to login page and need to give below mentioned credentials 
-Username = "TEJAS2604"
+Username = "TejasRajput"
 Password = "TEJAS2604"
 
 
